@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="calculator model.css">
+<title>Real Calculator</title>
+</head>
+<body>
+<audio src="sounds/tec1.mp3">
+</audio>
+<audio class="audio2" src="sounds/tec2.mp3">
+</audio>
+<audio class="audio3" src="sounds/beep.mp3">
+</audio>
+
+<section class="corpo">
+<div class="calculator">
+<header class="tela">
+<p id="tela" style="overflow:hidden">0</p>
+<div class="resultado" id="resultado"> </div>
+</header>
+<div class="numeros">
+
+<span id="tec1" class="tec pp" onclick="audio3.play();"><p>mc</p></span>
+<span id="tec2" class="tec pp" onclick="audio3.play();"><p>m+</p></span>
+<span id="tec3" class="pp" onclick="audio3.play();"><p>m-</p></span>
+<span id="tec4" class="pp sound" onclick="audio3.play();">
+<label for="power-sound" id="label">
+<p><div class="som">
+<i class="fas fa-volume-up"></i>
+<i class="fas fa-volume-mute volume-mute"></i>
+<input class="power-sound" type="checkbox" id="power-sound">
+</div></p></label></span>
+
+<span class="nn n4 operador tec5" id="limpar" onclick="audio2.play();"><p>C</p></span>
+<span class="nn operador tec6" id="%" onclick="audio2.play();"><p>%</p></span>
+<span class="nn operador tec7" id="+/-" onclick="audio2.play();"><p>±</p></span>
+<span class="nn operador tec8" id="/" onclick="audio2.play();"><p>÷</p></span>
+
+<span class="nc numero tec9" id="7" onclick="audio.play();"><p>7</p></span>
+<span class="nc n9 numero tec10" id="8" onclick="audio.play();"><p>8</p></span>
+<span class="nc n10 numero tec11" id="9" onclick="audio.play();"><p>9</p></span>
+<span class="nn n11 operador tec12" id="*" onclick="audio2.play();"><p>×</p></span>
+
+<span class="nc numero tec13" id="4" onclick="audio.play();"><p>4</p></span>
+<span class="nc numero tec14" id="5" onclick="audio.play();"><p>5</p></span>
+<span class="nc numero tec15" id="6" onclick="audio.play();"><p>6</p></span>
+<span class="nn operador tec16" id="-" onclick="audio2.play();"><p>-</p></span>
+
+<span class="span nc numero tec17" id="1" onclick="audio.play();"><p>1</p></span>
+<span name="span" class="nc n17 numero tec18" id="2" onclick="audio.play();"><p>2</p></span>
+<span class="nc numero tec19" id="3" onclick="audio.play();"><p>3</p></span>
+<span class="nn n19 operador tec20" id="+" onclick="audio2.play();"><p>+</p></span>
+
+<span class="nc operador tec21" id="." onclick="audio.play();"><p>.</p></span>
+<span class="nc numero tec22" id="0" onclick="audio.play();"><p>0</p></span>
+<span class="nc operador tec23" id="apagar" onclick="audio.play();"><p><i class="fas fa-backspace"></i></p></span>
+<span class="nn n23 operador tec24" id="=" onclick="audio2.play();"><p>=</p></span>
+
+</div>
+</div>
+</section>
+
+<div class="license">
+<p>Desenvolvido por &copy; <a href="https://johnnyvasconcelos.com" target="_blank">Johnny Vasconcelos</a> | Sons de <a target="_blank" href="https://zapsplat.com">Zapsplat</a></p>
+</div>
+<script src="calculator model.js"></script>
+<script src="https://kit.fontawesome.com/4d3ed6be58.js" crossorigin="anonymous"></script>
+</body>
+</html>
