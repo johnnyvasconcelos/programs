@@ -37,6 +37,7 @@
     background-image: linear-gradient(-70deg, #efefef, #eee0e0);
     width: 55vh;
     height: 40vh;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     }
@@ -52,6 +53,7 @@
     display: flex;
     flex-direction: column;
     padding-left: 2vh;
+    width: 55%;
     }
     
     .urna .tela .inicio-0 .esquerda .seu-voto {
@@ -69,9 +71,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 6vh;
-    height: 6vh;
+    width: 5.5vh;
+    height: 5.5vh;
     margin: 1vh 0.6vh;
+    font-size: 2vh;
     }
 
     .show {
@@ -122,6 +125,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    border: 3.5vh solid #efefef;
     }
 
     .urna .tela .inicio-0 .direita .direita-image {
@@ -129,25 +133,26 @@
         text-align: center;
         border: 0.03em solid #b8b8b8;
         padding: 0.25em;
+        margin: 5px 0;
     }
 
     .urna .tela .inicio-0 .direita .small {
         width: 50%;
-        font-size: 1.4vh;
+        font-size: 1.6vh;
     }
 
     .urna .tela .inicio-0 .direita img {
         width: 100%;
     }
     
-    .urna .tela .inicio {
-    font-size: 1vh;
-    height: 6.65vh;
+    .urna .tela .inicio, .urna .tela .inicio strong {
+    font-size: 1.4vh;
+    height: 4.70vh;
     color: #333;
     border-top: 0.2vh solid #333;
     padding-left: 2vh;
-    padding-top: 0.1vh;
-    overflow: hidden;
+    padding-top: 1.2vh;
+    overflow: auto;
     line-height: 2.2vh;
     }
     
@@ -319,8 +324,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 6vh;
-    height: 6vh;
     margin: 1vh 0.6vh;
     }
     
@@ -362,12 +365,6 @@
     
     .urna .tela .inicio-0 .direita {
     font-size: 1.1vh;
-    }
-    
-    .urna .tela .inicio {
-    height: 6.65vh;
-    padding-left: 2vh;
-    line-height: 2.2vh;
     }
     
     .urna .numerais {
