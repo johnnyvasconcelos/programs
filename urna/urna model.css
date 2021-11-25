@@ -136,6 +136,10 @@
         margin: 5px 0;
     }
 
+    .urna .tela .inicio-0 .direita .direita-image span {
+        font-size: 1.4vh;
+    }
+
     .urna .tela .inicio-0 .direita .small {
         width: 50%;
         font-size: 1.6vh;

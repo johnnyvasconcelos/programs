@@ -4,7 +4,7 @@ titulo: 'Vereador',
 numeros: 5,
 candidatos: [
     {
-        numero: '68000',
+        numero: ["5","9","0","0","0"],
         nome: 'Lívio Silva',
         partido: 'PLS',
         fotos: [
@@ -12,7 +12,7 @@ candidatos: [
         ]
     },
     {
-        numero: '59000',
+        numero: ["6","8","0","0","0"],
         nome: 'Maurícia Campos',
         partido: 'PMC',
         fotos: [
@@ -26,7 +26,7 @@ titulo: 'Prefeito',
 numeros: 2,
 candidatos: [
     {
-        numero: '68',
+        numero: ['6','8'],
         nome: 'Luma Santos',
         partido: 'PLS',
         vice: 'Lamar',
@@ -36,7 +36,7 @@ candidatos: [
         ]
     },
     {
-        numero: '59',
+        numero: ['5','9'],
         nome: 'Miranda Costa',
         partido: 'PMC',
         vice: 'Mirandir',
