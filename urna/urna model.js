@@ -17,15 +17,18 @@ let candidato4b = ["5","8"]
 let imageArea = document.querySelector('.direita-image')
 let imageArea2 = document.querySelector('.small')
 let legenda = document.querySelector('.direita-image span')
+let legenda2 = document.querySelector('.small span')
 let perfil = document.querySelector('.perfilum')
 let perfil2 = document.querySelector('.perfildois')
 
 let atualStage = 0
 let nn = []
+let votoBranco = false
 
 function iniciarStage() {
     let stage = stages[atualStage]
     let numeroHtml = ''
+    votoBranco = false
     
 for  (let i = 0; i < stage.numeros; i++) {
     if (i === 0) {
@@ -43,13 +46,16 @@ for  (let i = 0; i < stage.numeros; i++) {
     candidato.style.display = 'none'
     imageArea.style.display = 'none'
     imageArea2.style.display = 'none'
+
+
+
 }
 
 function interface() {
     let stage = stages[atualStage]
     let individuo = stage.candidatos.filter((elemento)=>{
         nnn = nn.toString()
-       
+       /* Vereadores */
 if (/*elemento.numero == nnn*/nnn == candidato1) {
     seuVoto.style.display = 'block'
    perfil.style.display = 'block'
@@ -82,11 +88,65 @@ if (/*elemento.numero == nnn*/nnn == candidato1) {
    candidato.innerHTML = '<span><br>Nome: Marta Silveira<br>Partido: PMS</span>'
     perfil.setAttribute('src', 'vereador4.png')
     legenda.innerText = 'VEREADORA'
+} /* Prefeitos */ 
+else if (nnn == candidato3) {
+    seuVoto.style.display = 'block'
+    perfil.style.display = 'block'
+    perfil2.style.display = 'block'
+    imageArea.style.display = 'block'
+    imageArea2.style.display = 'block'
+    candidato.style.display = 'block'
+    candidato.innerHTML = '<span><br>Nome: Miranda Costa<br>Partido: PMC<br>Vice: Mirandir Cunha</span>'
+     perfil.setAttribute('src', 'prefeito2.png')
+     perfil2.setAttribute('src', 'vice2.png')
+     legenda.innerText = 'PREFEITO'
+     legenda2.innerText = 'VICE-PREFEITO'
+} else if (nnn == candidato3b) {
+    seuVoto.style.display = 'block'
+    perfil.style.display = 'block'
+    perfil2.style.display = 'block'
+    imageArea.style.display = 'block'
+    imageArea2.style.display = 'block'
+    candidato.style.display = 'block'
+    candidato.innerHTML = '<span><br>Nome: Himoto Takamura<br>Partido: PHT<br>Vice: Lina Takamura</span>'
+     perfil.setAttribute('src', 'prefeito3.png')
+     perfil2.setAttribute('src', 'vice3.png')
+     legenda.innerText = 'PREFEITO'
+     legenda2.innerText = 'VICE-PREFEITA'
+} else if (nnn == candidato4) {
+    seuVoto.style.display = 'block'
+    perfil.style.display = 'block'
+    perfil2.style.display = 'block'
+    imageArea.style.display = 'block'
+    imageArea2.style.display = 'block'
+    candidato.style.display = 'block'
+    candidato.innerHTML = '<span><br>Nome: Luma Santos<br>Partido: PLS<br>Vice: Lamar Silva</span>'
+     perfil.setAttribute('src', 'prefeito1.png')
+     perfil2.setAttribute('src', 'vice1.png')
+     legenda.innerText = 'PREFEITA'
+     legenda2.innerText = 'VICE-PREFEITO'
+} else if (nnn == candidato4b) {
+    seuVoto.style.display = 'block'
+    perfil.style.display = 'block'
+    perfil2.style.display = 'block'
+    imageArea.style.display = 'block'
+    imageArea2.style.display = 'block'
+    candidato.style.display = 'block'
+    candidato.innerHTML = '<span><br>Nome: Costa Neves<br>Partido: PCN<br>Vice: Cabo Noronha</span>'
+     perfil.setAttribute('src', 'prefeito4.png')
+     perfil2.setAttribute('src', 'vice4.png')
+     legenda.innerText = 'PREFEITO'
+     legenda2.innerText = 'VICE-PREFEITO'
+}
+
+else {
+    seuVoto.style.display = 'block'
+    candidato.style.display = 'block'
+    candidato.innerHTML = '<div class="nulo show">VOTO NULO</div>'
 }
     })
 
 }
-
 
 function clickk(n) {
     nn.push(n)
@@ -105,15 +165,44 @@ function clickk(n) {
 }
 
 function branco() {
-alert("clicou em BRANCO")
+if (nn == '') {
+    votoBranco = true
+    seuVoto.style.display = 'block'
+    numeros.innerHTML = ''
+    candidato.style.display = 'block'
+    candidato.innerHTML = '<div class="nulo show">VOTO EM BRANCO</div>'
+} else {
+    alert('Corrija o seu voto antes de votar em BRANCO')
+}
 }
 
 function corrige() {
-    alert("clicou em CORRIGE")
+    iniciarStage()
+   nn = []
 }
 
 function confirma() {
-    alert("clicou em CONFIRMA")
+    let votoConfirma = false
+    let stage = stages[atualStage]
+    if (votoBranco == true) {
+        votoConfirma = true
+        alert('ok')
+    } else if (nn.length === stage.numeros) {
+        votoConfirma = true
+    } if (votoConfirma) {
+        atualStage ++
+        if (stages[atualStage] !== undefined) {
+            iniciarStage()
+            nn = []
+        } else {
+            seuVoto.style.display = 'none'
+    numeros.innerHTML = ''
+    candidato.style.display = 'block'
+    direita.style.display = 'none'
+    cargo.style.display = 'none'
+    candidato.innerHTML = '<div class="fim">FIM</div>'
+        }
+    }
 }
 
 iniciarStage()
