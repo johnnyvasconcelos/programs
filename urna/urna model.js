@@ -20,6 +20,8 @@ let legenda = document.querySelector('.direita-image span')
 let legenda2 = document.querySelector('.small span')
 let perfil = document.querySelector('.perfilum')
 let perfil2 = document.querySelector('.perfildois')
+var tec = document.querySelector('.audio')
+var confirm = document.querySelector('.audio2')
 
 let atualStage = 0
 let nn = []
@@ -207,3 +209,20 @@ function confirma() {
 }
 
 iniciarStage()
+
+
+//som
+
+let tec1 = document.querySelector('#tec1');
+let tec2 = document.querySelector('#tec2');
+let tec3 = document.querySelector('#tec3');
+let tec4 = document.querySelector('#tec4');
+let tec5 = document.querySelector('#tec5');
+let tec6 = document.querySelector('#tec6');
+let tec7 = document.querySelector('#tec7');
+let tec8 = document.querySelector('#tec8');
+let tec9 = document.querySelector('#tec9');
+let tec10 = document.querySelector('#tec10');
+let tec11 = document.querySelector('.tec11');
+let tec12 = document.querySelector('.tec12');
+let tec13 = document.querySelector('.tec13');

@@ -20,6 +20,10 @@
     height: 100vh;
     justify-content: center;
     }
+
+    audio {
+        display: none;
+    }
     
     .urna {
     width: 125vh;

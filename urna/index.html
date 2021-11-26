@@ -8,7 +8,10 @@
 </head>
 
 <body>
-
+    <audio class="audio" src="tec.mp3">
+    </audio>
+    <audio class="audio2" src="confirma.mp3">
+    </audio>
 <section class="urna">
 
 <div class="tela">
@@ -67,25 +70,25 @@ Partido:
 <div class="numerais">
 <div class="numeros">
 <div class="spans">
-<span onclick="clickk('1')"><p>1</p></span>
-<span onclick="clickk('2')"><p>2</p></span>
-<span onclick="clickk('3')"><p>3</p></span>
-<span onclick="clickk('4')"><p>4</p></span>
-<span onclick="clickk('5')"><p>5</p></span>
-<span onclick="clickk('6')"><p>6</p></span>
-<span onclick="clickk('7')"><p>7</p></span>
-<span onclick="clickk('8')"><p>8</p></span>
-<span onclick="clickk('9')"><p>9</p></span>
-<span onclick="clickk('0')"><p>0</p></span>
+<span onclick="clickk('1'), tec.play()" id="tec1"><p>1</p></span>
+<span onclick="clickk('2'), tec.play()" id="tec2"><p>2</p></span>
+<span onclick="clickk('3'), tec.play()" id="tec3"><p>3</p></span>
+<span onclick="clickk('4'), tec.play()" id="tec4"><p>4</p></span>
+<span onclick="clickk('5'), tec.play()" id="tec5"><p>5</p></span>
+<span onclick="clickk('6'), tec.play()" id="tec6"><p>6</p></span>
+<span onclick="clickk('7'), tec.play()" id="tec7"><p>7</p></span>
+<span onclick="clickk('8'), tec.play()" id="tec8"><p>8</p></span>
+<span onclick="clickk('9'), tec.play()" id="tec9"><p>9</p></span>
+<span onclick="clickk('0'), tec.play()" id="tec10"><p>0</p></span>
 </div>
 <div class="botoes">
-<span class="botao" onclick="branco()" id="branco">
+<span class="botao tec11" onclick="branco(), tec.play()" id="branco">
 <p>Branco</p>
 </span>
-<span onclick="corrige()" class="botao" id="corrige">
+<span onclick="corrige(), tec.play()" class="botao tec12" id="corrige">
 <p>Corrige</p>
 </span>
-<span onclick="confirma()" class="botao" id="confirma">
+<span onclick="confirma(), confirm.play()" class="botao tec13" id="confirma">
 <p>Confirma</p>
 </span>
 </div>

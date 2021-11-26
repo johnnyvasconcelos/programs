@@ -185,7 +185,7 @@ tec24.setAttribute('onclick', 'audio2.play();')
 power.addEventListener('click', function() {
 if (power.checked == 1) {
 audio = 0
-audio2= 0
+audio2 = 0
 audio3 = 0
 } if (power.checked == 0) {
 audio2 = document.querySelector('audio')
