@@ -301,7 +301,8 @@
     .fim {
         text-align: center;
         font-size: 7vh;
-        margin: 5vh 0 10hh 0;
+        display: block;
+        margin: 5vh auto 10vh auto;
         font-weight: 800;
     }
 
@@ -620,8 +621,8 @@
 
       .urna {
           width: 90%;
-          height: auto;
           padding: 2vh;
+          height: auto;
           flex-direction: column;
       }
       .urna .tela {
@@ -665,7 +666,7 @@
     
         .urna {
       flex-direction: column;
-      height: auto;
+      height: 115vh;
       margin-top: 4vh;
       }
     
