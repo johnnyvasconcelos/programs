@@ -5,10 +5,15 @@ let aviso = document.querySelector('.inicio')
 let direita = document.querySelector('.direita')
 let numeros = document.querySelector('.numeros')
 aviso.innerHTML = "vereadores: 59000 | 68000 - prefeitos: 59 | 68"
+//Lista de candidatos
 let candidato1 = ["5","9","0","0","0"]
+let candidato1b = ["5","8","0","0","0"]
 let candidato2 = ["6","8","0","0","0"]
+let candidato2b = ["6","9","0","0","0"]
 let candidato3 = ["5","9"]
+let candidato3b = ["6","9"]
 let candidato4 = ["6","8"]
+let candidato4b = ["5","8"]
 let imageArea = document.querySelector('.direita-image')
 let imageArea2 = document.querySelector('.small')
 let legenda = document.querySelector('.direita-image span')
@@ -60,6 +65,22 @@ if (/*elemento.numero == nnn*/nnn == candidato1) {
    candidato.style.display = 'block'
    candidato.innerHTML = '<span><br>Nome: Maurícia Campos<br>Partido: PMC</span>'
     perfil.setAttribute('src', 'vereador2.png')
+    legenda.innerText = 'VEREADORA'
+} else if (nnn == candidato1b) {
+    seuVoto.style.display = 'block'
+   perfil.style.display = 'block'
+   imageArea.style.display = 'block'
+   candidato.style.display = 'block'
+   candidato.innerHTML = '<span><br>Nome: Tito Teixeira<br>Partido: PTT</span>'
+    perfil.setAttribute('src', 'vereador3.png')
+    legenda.innerText = 'VEREADOR'
+} else if (nnn == candidato2b) {
+    seuVoto.style.display = 'block'
+   perfil.style.display = 'block'
+   imageArea.style.display = 'block'
+   candidato.style.display = 'block'
+   candidato.innerHTML = '<span><br>Nome: Marta Silveira<br>Partido: PMS</span>'
+    perfil.setAttribute('src', 'vereador4.png')
     legenda.innerText = 'VEREADORA'
 }
     })
