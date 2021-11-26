@@ -199,6 +199,7 @@ function confirma() {
     candidato.style.display = 'block'
     direita.style.display = 'none'
     cargo.style.display = 'none'
+    aviso.innerHTML = "OBRIGADO PELO SEU VOTO!"
     candidato.innerHTML = '<div class="fim">FIM</div>'
         }
     }
