@@ -186,7 +186,6 @@ function confirma() {
     let stage = stages[atualStage]
     if (votoBranco == true) {
         votoConfirma = true
-        alert('ok')
     } else if (nn.length === stage.numeros) {
         votoConfirma = true
     } if (votoConfirma) {

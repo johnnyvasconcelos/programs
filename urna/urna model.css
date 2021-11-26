@@ -186,15 +186,25 @@
     cursor: pointer;
     width: 14vh;
     height: 7.1vh;
-    border-top: 0.5vh solid #444;
-    border-right: 0.5vh solid #333;
-    border-left: 0.5vh solid #333;
-    border-bottom: 0.5vh solid #040404;
+    border-top: 0.8vh solid #444;
+    border-right: 0.8vh solid #333;
+    border-left: 0.8vh solid #333;
+    border-bottom: 0.8vh solid #040404;
     text-align: center;
     color: #eee;
     margin: 0.55vh;
     display: inline-block;
     background: #111;
+    }
+
+    .urna .numerais .numeros span:active {
+        border-bottom: 0.8vh solid #444;
+        border-top: 0.8vh solid #040404;
+        background: #090909;
+    }
+
+    .urna .numerais .numeros span:active p {
+        transform: translateY(3.3%);
     }
 
     .urna .numerais .numeros .spans span p {
@@ -216,6 +226,27 @@
     justify-content: space-between;
     flex-wrap: wrap;
     }
+
+    .urna .numerais .numeros #corrige:active {
+        border-bottom: 0.8vh solid #f0914d;
+        border-top: 0.8vh solid #a15c2a;
+        background: #cc7232;
+        padding-top: 2.5vh;
+    }
+
+    .urna .numerais .numeros .botoes #branco:active {
+        border-bottom: 0.8vh solid #fff;
+        border-top: 0.8vh solid gray;
+        background: #ccc;
+        padding-top: 2.5vh;
+    }
+
+    .urna .numerais .numeros #confirma:active {
+        border-bottom: 0.8vh solid #39db74;
+        border-top: 0.8vh solid #106930;
+        background: #1aa54d;
+        padding-top: 2.5vh;
+    }
     
     .urna .numerais .numeros .botoes .botao {
     padding: 2vh 3vh;
@@ -234,27 +265,27 @@
     
     .urna .numerais .numeros .botoes #branco {
     background: #efefef;
-    border-top: 0.5vh solid #fff;
-    border-right: 0.5vh solid #ccc;
-    border-left: 0.5vh solid #ccc;
-    border-bottom: 0.5vh solid gray;
+    border-top: 0.8vh solid #fff;
+    border-right: 0.8vh solid #ccc;
+    border-left: 0.8vh solid #ccc;
+    border-bottom: 0.8vh solid gray;
     }
     
     .urna .numerais .numeros #corrige {
     background: #e88035;
-    border-top: 0.5vh solid #f0914d;
-    border-right: 0.5vh solid #d1722e;
-    border-left: 0.5vh solid #d1722e;
-    border-bottom: 0.5vh solid #a15c2a;
+    border-top: 0.8vh solid #f0914d;
+    border-right: 0.8vh solid #d1722e;
+    border-left: 0.8vh solid #d1722e;
+    border-bottom: 0.8vh solid #a15c2a;
     }
     
     .urna .numerais .numeros #confirma {
     background: #1bc258;
     height: 8vh;
-    border-top: 0.5vh solid #39db74;
-    border-right: 0.5vh solid #19a84d;
-    border-left: 0.5vh solid #19a84d;
-    border-bottom: 0.5vh solid #106930;
+    border-top: 0.8vh solid #39db74;
+    border-right: 0.8vh solid #19a84d;
+    border-left: 0.8vh solid #19a84d;
+    border-bottom: 0.8vh solid #106930;
     }
     
     .urna .numerais .numeros #confirma p, .urna .numerais .numeros #corrige p, .urna .numerais .numeros .botoes #branco p {
@@ -453,26 +484,30 @@
     }
     
     .urna .numerais .numeros .botoes #branco {
-    border-top: 0.5vh solid #fff;
-    border-right: 0.5vh solid #ccc;
-    border-left: 0.5vh solid #ccc;
-    border-bottom: 0.5vh solid gray;
+    border-top: 0.8vh solid #fff;
+    border-right: 0.8vh solid #ccc;
+    border-left: 0.8vh solid #ccc;
+    border-bottom: 0.8vh solid gray;
     }
     
     .urna .numerais .numeros #corrige {
-    border-top: 0.5vh solid #f0914d;
-    border-right: 0.5vh solid #d1722e;
-    border-left: 0.5vh solid #d1722e;
-    border-bottom: 0.5vh solid #a15c2a;
+    border-top: 0.8vh solid #f0914d;
+    border-right: 0.8vh solid #d1722e;
+    border-left: 0.8vh solid #d1722e;
+    border-bottom: 0.8vh solid #a15c2a;
     }
+
+
     
     .urna .numerais .numeros #confirma {
     height: 8vh;
-    border-top: 0.5vh solid #39db74;
-    border-right: 0.5vh solid #19a84d;
-    border-left: 0.5vh solid #19a84d;
-    border-bottom: 0.5vh solid #106930;
+    border-top: 0.8vh solid #39db74;
+    border-right: 0.8vh solid #19a84d;
+    border-left: 0.8vh solid #19a84d;
+    border-bottom: 0.8vh solid #106930;
     }
+
+
     
     .urna .numerais .numeros #confirma p, .urna .numerais .numeros #corrige p, .urna .numerais .numeros .botoes #branco p {
     font-size: 1.4vh;
