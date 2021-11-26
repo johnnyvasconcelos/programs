@@ -306,6 +306,16 @@
         font-weight: 800;
     }
 
+    .final {
+        font-size: 8vh;
+        font-weight: 800;
+        position: absolute;
+        top: 50%;
+        font-family: sans-serif;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
     
     footer {
     position: absolute;
@@ -328,6 +338,12 @@
     }
     
     @media (min-width: 900px) {
+
+        .final {
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+        }
     
     .urna {
     width: 125vh;
@@ -343,6 +359,7 @@
     .urna .tela {
     width: 55vh;
     height: 40vh;
+    position: relative;
     display: flex;
     flex-direction: column;
     }
@@ -542,7 +559,11 @@
     
     @media (min-width: 830px) and (max-device-width: 1240px) {
     
-    
+    .final {
+        transform: translate(-230%,-50%);
+        top: 50%;
+        left: 50%;
+    }
         .urna {
             height: 60vh;
         }
@@ -572,7 +593,11 @@
         .urna .numerais .numeros {
             padding-top: 5vh;
         }
-    
+        .final {
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+        }
     }
     
     @media screen and (min-device-width: 590px) and (max-device-width: 1250px) {
@@ -609,11 +634,28 @@
           width: 7.5vh;
           height: 6.8vh;
       }
+
+      .final {
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+    }
     
     }
     
+    @media screen and (min-device-width: 781px) and (max-device-width: 899px) {
+        .final {
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 28%;
+        }
+    }
     
     @media (max-width: 780px) {
+
+        .final {
+            top: 25%;
+        }
 
         .fim {
             margin-top: -7vh;
@@ -622,7 +664,7 @@
       .urna {
           width: 90%;
           padding: 2vh;
-          height: auto;
+          height: 110vh;
           flex-direction: column;
       }
       .urna .tela {
@@ -664,6 +706,11 @@
     
     @media (max-width: 600px) {
     
+
+        .final {
+            top: 25%;
+        }
+
         .urna {
       flex-direction: column;
       height: 90vh;

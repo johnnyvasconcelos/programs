@@ -200,7 +200,8 @@ function confirma() {
     direita.style.display = 'none'
     cargo.style.display = 'none'
     aviso.innerHTML = "OBRIGADO PELO SEU VOTO!"
-    candidato.innerHTML = '<div class="fim">FIM</div>'
+    let tela = document.querySelector('.tela')
+    tela.innerHTML = '<div class="final">FIM</div>'
         }
     }
 }
