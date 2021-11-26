@@ -666,12 +666,13 @@
     
         .urna {
       flex-direction: column;
-      height: 115vh;
+      height: 100vh;
       margin-top: 4vh;
       }
     
       .urna .tela {
           width: 100%;
+          overflow: auto;
       }
     
       .urna .numerais {
