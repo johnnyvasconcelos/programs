@@ -7,6 +7,8 @@ let numeros = document.querySelector('.numeros')
 aviso.innerHTML = "vereadores: 59000 | 68000 - prefeitos: 59 | 68"
 let candidato1 = ["5","9","0","0","0"]
 let candidato2 = ["6","8","0","0","0"]
+let candidato3 = ["5","9"]
+let candidato4 = ["6","8"]
 let imageArea = document.querySelector('.direita-image')
 let imageArea2 = document.querySelector('.small')
 let legenda = document.querySelector('.direita-image span')
@@ -62,15 +64,6 @@ if (/*elemento.numero == nnn*/nnn == candidato1) {
 }
     })
 
-    if (individuo.length < 0) {
-        alert('ok')
-        individuo = individuo[0]
-        seuVoto.style.display = 'block'
-        let fotosHtml = ''
-        for (let i in individuo.fotos) {
-            fotosHtml += `<div class="direita-image"><img src="${individuo.fotos[i].url}">${individuo.fotos[i].legenda}</div>`
-        }
-    }
 }
 
 

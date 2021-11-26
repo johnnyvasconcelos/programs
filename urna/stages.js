@@ -1,3 +1,5 @@
+//pode ser necessário!!!
+
 var stages = [
     {
 titulo: 'Vereador',
